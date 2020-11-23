@@ -81,6 +81,17 @@ nav span{
     border-left:3px solid #626262;
 
 }
+/* Media Query for Header Styles */
+@media only screen and (max-width: 500px){
+    nav{
+        width: 60%; 
+    }
+    nav a{
+        font-size: 2rem; 
+    }
+}
+/* End of Media Query for Header Styles */
+
 /*Title Section Styles*/
 .title-container{
     display:flex;
@@ -105,6 +116,7 @@ nav span{
 .title-container hr{
     width:80%;
 }
+/* Media Query Styling for Title section */
 @media only screen and (max-width: 500px){
     .title-container div{
         width: 100%; 
@@ -113,6 +125,8 @@ nav span{
     }
     .title-container hr{
         width: 100%; 
+        border-top: .3rem solid black;  
+        opacity: .2; 
     }
     h1{
         font-size: 5rem;
@@ -121,9 +135,12 @@ nav span{
     }
     button{
         margin-top: 2%; 
-        padding: 10% ;
+        padding: 40% ;
+        width: 25%;
+          
     }
 }
+/* End of Media Query Styling for Title section */
 button{
     padding:1% 3%;
     font-size: 1.6rem;
@@ -138,6 +155,7 @@ button:hover{
     color:white;
     box-shadow: 2px 2px 1px white;
 }
+
 /*Artists Section Styles */
 .artists-container{
     display:flex;
